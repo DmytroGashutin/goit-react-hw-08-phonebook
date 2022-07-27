@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux/es/exports";
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import style from './Navigation.module.css';
 import { authSelectors } from "components/redux/auth";

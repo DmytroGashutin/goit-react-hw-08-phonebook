@@ -21,7 +21,6 @@ function App() {
   return (
     <Container>
       <AppBar />
-
       <Routes>
         <Route path="/" element={<HomeView />} />
         <Route
@@ -56,4 +55,4 @@ function App() {
   );
 }
 
-export { App }
+export { App };
