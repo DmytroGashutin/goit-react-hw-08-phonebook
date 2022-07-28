@@ -1,4 +1,4 @@
-import {useSelector, useDispatch} from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux';
 import { authSelectors, authOperations } from '../redux/auth';
 import defaultAvatar from './default-avatar.png';
 
