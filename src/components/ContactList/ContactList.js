@@ -7,8 +7,13 @@ import s from './ContactList.module.css';
 
 const ContactList = () => {
   const dispatch = useDispatch();
-  useEffect(() => dispatch(contactsOperations.fetchContacts()), [dispatch]);
+  useEffect(() => {
+    dispatch(contactsOperations.fetchContacts())
+  }, [dispatch]);
   const filteredContacts = useSelector(getFilteredContacts);
+
+
+
 
   return (
     <ul className={s.list}>

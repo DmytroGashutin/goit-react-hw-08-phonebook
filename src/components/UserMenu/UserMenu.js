@@ -14,6 +14,10 @@ const styles = {
     fontWeight: 700,
     marginRight: 12,
   },
+  button: {
+    borderRadius: 10,
+    
+  },
 };
 
 export default function UserMenu() {
@@ -25,7 +29,7 @@ export default function UserMenu() {
     <div style={styles.container}>
       <img src={avatar} alt="" width="32" style={styles.avatar} />
       <span style={styles.name}>Welcome, {name}</span>
-      <button type="button" onClick={() => dispatch(authOperations.logOut())}>
+      <button style={styles.button}  type="button" onClick={() => dispatch(authOperations.logOut())}>
         Sign Out
       </button>
     </div>
